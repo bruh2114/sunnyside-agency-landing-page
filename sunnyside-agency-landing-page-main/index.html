@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/490ce27715.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .item1 { grid-area: header; }
+    .item2 { grid-area: left; }
+    .item3 { grid-area: right; }
+    .item4 { grid-area: L1; }
+    .item5 { grid-area: R1; }
+    .item6 { grid-area: L2; }
+    .item7 { grid-area: R2; }
+    .item8 { grid-area: main; }
+    .item9 { grid-area: L3; }
+    .item10 { grid-area: C1; }
+    .item11 { grid-area: C2; }
+    .item12 { grid-area: R3;}
+    .item13 { grid-area: I2;} 
+
+    li {
+      float: right;
+      border-right:1px solid #bbb;
+    }
+    li.item1 {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    img.item8 {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+
+    .grid-container {
+      display: grid;
+      grid-template-areas: 
+      'header header'
+      'left right'
+      'L1 R1'
+      'L2 R2'
+      'main main'
+      'L3 L3'
+      'I2 I2';
+      grid-template-columns: auto auto;
+      grid-template-rows:auto auto;
+    }
+
+    .image-circle{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="item1"><img src="./images/desktop/image-header.jpg" style="width: 100%;"/>
+      <ul style="list-style-type: none;margin: 0;padding: 0;overflow: hidden; color: white; position: absolute; top: 8px; right: 16px;">
+      <li>About</li>
+      <li>Services</li>
+      <li>Projects</li>
+      <li><button style="background-color: white; color: black; text-align: center; float: right;">Contact</button></li>
+    </ul>
+
+    <h1 style="position: relative; bottom: 2000px;left: 50px; text-align: center; font-size: 200px; text-transform: uppercase; font-family: Georgia, 'Times New Roman', Times, serif; color: white;">We are creatives</h1>
+    <img src="./images/icon-arrow-down.svg" style="position: relative; bottom: 1800px;left: 2250px; width: 2%;"/>
+    </div>
+
+
+    <div class="item2" style="position: relative; top: 300px;left: 300px; text-align: left; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 60px; padding-bottom: 64px; padding: auto; width: 26em; word-break: keep-all;">
+      <h1 style="font-weight:bold;">Transform your brand</h1>
+
+      <p> We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you. </p>
+    
+      <p style="text-decoration-line: underline; text-decoration-color: yellow;text-decoration-thickness: 20px; text-transform: uppercase;"><b>Learn more</b></p>
+    </div>
+
+    <div class="item3"><img src="./images/desktop/image-transform.jpg" style="width: 100%;"/></div>
+    <div class="item4"><img src="./images/desktop/image-stand-out.jpg" style="width: 100%;"/></div>
+    
+    <div class="item5" style="position: relative; top: 300px;left: 300px; text-align: left; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 60px; padding-bottom: 64px; padding: auto; width: 26em; word-break: keep-all;">
+      <h1 style="font-weight:bold;">Stand out to the right audience</h1>
+
+      <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p> 
+    
+      <p style="text-decoration-line: underline; text-decoration-color:lightpink;text-decoration-thickness: 20px; text-transform: uppercase;"><b>Learn more</b></p></div>
+    
+    <div class="item6"><img src="./images/desktop/image-graphic-design.jpg" style="width: 100%;"/>
+    <div class="text1" style="position: relative; bottom: 700px;left: 550px; text-align: center;font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom: 64px; padding: auto; width: 22em; word-break: keep-all;">
+      <h1 style="font-weight:bold;">Graphic design</h1>
+      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+    </div>
+    </div>
+    
+    <div class="item7"><img src="./images/desktop/image-photography.jpg" style="width: 100%;"/>
+      <div class="text2" style="position: relative; bottom: 700px;left: 550px; text-align: center;font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom: 64px; padding: auto; width: 22em; word-break: keep-all;">
+      <h1 style="font-weight:bold; color: rbg 30, 86, 75;">Photography</h1>
+      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    </div>
+    </div>
+
+    <div class="item8" style="text-align:center;display: grid; grid-template-columns: auto auto auto;">
+      <h3>Client testimonials</h3>
+
+ <div>
+
+  
+  <div class="item10"  style="display: grid; grid-template-columns: auto auto auto;">
+    <div><img src="./images/image-emily.jpg"    class="image-circle" style="width: 50%;height: auto;" /></div>
+    <div><img src="./images/image-thomas.jpg"   class="image-circle" style="width: 50%;height: auto;"/></div>
+    <div><img src="./images/image-jennie.jpg"   class="image-circle" style="width: 50%;height: auto;"/></div>
+  </div>
+  
+  <div class="item11" style="display: grid; grid-template-columns: auto auto auto; font-size: 50px; padding-bottom: 64px; padding: auto; width: 52em; word-break: keep-all;">
+    <div>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</div>
+    <div>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</div>
+    <div>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</div>
+  </div>
+     
+  <div class="item12" style="display: grid; grid-template-columns: auto auto auto;">
+    <div><h1>Emily R.</h1>
+      <div>
+      <div style="color: rgb(187, 182, 182);">Marketing Director</div>
+    <div><h1>Thomas S.</h1>
+      <div style="color: rgb(187, 182, 182);">Chief Operating Officer</div>
+      </div>
+    <div><h1>Jennie F.</h1>
+      <div style="color: rgb(187, 182, 182);">Business Owner</div>
+      </div>
+  </div> 
+</div> 
+    </div>
+
+  <div class="item9" style="display: grid; grid-template-columns: auto auto auto auto;">
+      <div><img src="./images/desktop/image-gallery-milkbottles.jpg" style="width: 100%;height: auto;"/></div>
+      <div><img src="./images/desktop/image-gallery-orange.jpg" style="width: 100%;"/></div>
+      <div><img src="./images/desktop/image-gallery-cone.jpg" style="width: 100%;"/></div>
+      <div><img src="./images/desktop/image-gallery-sugarcubes.jpg" style="width: 100%;"/></div>
+  </div>
+
+  <div class="item13" style="text-align: center; background-color: mediumseagreen;"><h1>sunnyside</h1>
+    <div style="display:grid; grid-template-columns: auto;">
+      <div style="display:grid; grid-template-columns: auto auto auto;">
+      <div>About</div>
+      <div>Services</div> 
+      <div>Projects</div>
+    </div>
+      
+    </div>
+    
+      Contact
+      <div><i class="fa fa-facebook"></i></div>
+      <div><i class="fa fa-instagram"></i></div>
+      <div><i class="fa fa-twitter"></i></div>
+      <div><i class="fa fa-pinterest-p"></i></div>
+      
+  </div>
+</div>
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
